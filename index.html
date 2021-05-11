@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WJ.KIM</title>
+  <meta name="description" content="Personal portfolio Website">
+  <meta name="author" content="Won Jeong">
+  <meta http-eauiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="imgs/favicon.png">
+  <link rel="apple-touch-icon" href="imgs/favicon.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <!-- js -->
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="navbar__logo">
+      <img src="imgs/favicon.png" alt="logo">
+      <button>WJ.KIM</button>
+    </div>
+    <ul class="navbar__menu">
+      <li class="navbar__menu__item active" data-link="#home">HOME</li>
+      <li class="navbar__menu__item" data-link="#work">WORK</li>
+      <li class="navbar__menu__item" data-link="#skills">SKILL</li>
+      <li class="navbar__menu__item" data-link="#about">ABOUT</li>
+    </ul>
+
+    <!-- Toggle button -->
+    <button class="navbar__toggle-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+  <!-- HOME -->
+  <section id="home">
+    <div class="home__container">
+      <img 
+      src="imgs/me.jpg" 
+      alt="My photo" 
+      class="home__avatar"
+      >
+      <h1 class="home__title">KIM WON JEONG</h1>
+      <span class="home__description">&nbsp;&nbsp;Personal portfolio Website&nbsp;&nbsp;</span>
+
+    </div>
+  </section>
+  <!-- WORK -->
+  <section id="work" class="section">
+    <div class="section__container">
+      <h1>My Work</h1>
+      <h3>Projects</h3>
+      <div class="work__categories">
+        <button class="category__btn selected" data-filter="*">ALL 
+          <span class="category__count">5</span>
+        </button>
+        <button class="category__btn" data-filter="web">WEB 
+          <span class="category__count">2</span>
+        </button>
+        <button class="category__btn" data-filter="banner">BANNER 
+          <span class="category__count">3</span>
+        </button>
+      </div>
+      <div class="work__projects">
+        <a href="https://github.com/circle-jeong/TWOSOME_PLACE" class="project" target="blank" data-type="web">
+          <img src="imgs/projects/webSite_02_twosome.jpg" alt="ts" class="project__img">
+          <div class="project__description">
+            <h3>twosomeplace</h3>
+            <span>리디자인</span>
+          </div>
+        </a>
+        <a href="https://github.com/circle-jeong/kangol" class="project" target="blank" data-type="web">
+          <img src="imgs/projects/webSite_03_kangol.jpg" alt="ts" class="project__img">
+          <div class="project__description">
+            <h3>kangol</h3>
+            <span>리디자인</span>
+          </div>
+        </a>
+        <a href="https://github.com/circle-jeong/lush_intergalactic" class="project" target="blank" data-type="banner">
+          <img src="imgs/projects/banner_01_lush.jpg" alt="ts" class="project__img">
+          <div class="project__description">
+            <h3>LUSH</h3>
+            <span>상세페이지</span>
+          </div>
+        </a>
+        <a href="https://github.com/circle-jeong/lilybyred" class="project" target="blank" data-type="banner">
+          <img src="imgs/projects/banner_03_lilyby.jpg" alt="ts" class="project__img">
+          <div class="project__description">
+            <h3>lilybyred</h3>
+            <span>상세페이지</span>
+          </div>
+        </a>
+        <a href="https://github.com/circle-jeong/marymond" class="project" target="blank" data-type="banner">
+          <img src="imgs/projects/banner_02_mary.jpg" alt="ts" class="project__img">
+          <div class="project__description">
+            <h3>마리몬드</h3>
+            <span>상세페이지</span>
+          </div>
+        </a>
+    </div>
+
+  </section>
+  <!-- SKILL -->
+  <section id="skills" class="section">
+    <div class="section__container">
+      <h1>SKILLS</h1>
+      <div class="skillset">
+        <div class="skillset__left">
+          <h3 class="skillset__title">Skills</h3>
+          <div class="skill">
+            <div class="skill__desccription">
+              <span>HTML</span>
+              <span>80%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__desccription">
+              <span>CSS</span>
+              <span>70%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 70%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__desccription">
+              <span>JavaScript</span>
+              <span>60%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 60%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__desccription">
+              <span>photoshop</span>
+              <span>80%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__desccription">
+              <span>illustrator</span>
+              <span>40%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 50%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skillset__right">
+          <h3 class="skillset__title">WHAT I DO</h3>
+          <span>포토샵과 일러스트레이터를 활용해 디자인 시안 및 상세페이지 작업이 가능합니다.또한 HTML5&CSS 를 이용하여 웹페이지를 구축할 수 있으며 JaavaScript를 이용해 동적인 페이지 구현이 가능합니다. 현재 타입스크립트 및 리액트 등을 공부중이며 이를 활용하여 만들 작업물 또한 포트폴리오 사이트에 올릴 예정입니다.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section__container">
+      <h1>ABOUT ME</h1>
+      <div class="about__container">
+        <img src="imgs/03_About2.png" alt="" class="about-me__avatar">
+        <div class="about__right">
+          <h3 class="about__right__title">PROFILE</h3>
+          <p class="about__right__description">Kim won jeong / 김원정 <br>
+            92.06.26<br>
+            인천광역시 거주
+          </p>
+          <h3 class="about__right__title">EDUCATION</h3>
+          <p class="about__right__description">2011.02 인일여자고등학교 졸업<br>
+            2013.02 한국관광대학 졸업<br>
+            2019.09 디지털 웹디자인(프론트엔드)<br>
+            콘텐츠제작 양성 과정 수료
+          </p>
+          <h3 class="about__right__title">LICENSE</h3>
+          <p class="about__right__description">
+            2011.06 한글파워포인트 A등급<br>
+            2011.08 JLPT(新)N3<br>
+            2019.06 GTQ 그래픽시술자격 1급
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer id="footer">
+    <h1 class="footer__title">Let's talk</h1>
+    <h2 class="footer__email">kimchubby92@gmail.com</h2>
+    <div class="footer__link">
+      <a href="#">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <p class="footer__rights">©2020 KWJ PF. All rights reserved</p>
+  </footer>
+
+  <!-- Arrow up -->
+  <button class="arrow-up">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</body>
+</html>

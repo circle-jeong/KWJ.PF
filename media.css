@@ -1,0 +1,79 @@
+@media screen and (max-width: 900px) {
+    /* Skills */
+    .skillset {
+      flex-direction: column;
+    }
+}
+@media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+  --font-large: 30px;
+  --font-medium: 18px;
+  --font-regular: 16px;
+  --font-small: 14px;
+  --font-micro: 12px;
+}
+  /* Navbar */
+  .navbar__toggle-btn {
+    display: block;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--color-light-yellow);
+  }
+  .navbar__logo img {
+    width: 30px;
+    height: 30px;
+  }
+  #navbar.navbar--dark {
+    padding: 8px;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .navbar__menu.open {
+    display: block;
+  }
+  .navbar__toggle-btn {
+    right: 12px;
+  }
+
+    /* Section */
+    .section {
+      padding: 16px;
+      padding-top: 50px;
+    }
+
+  /* Home */
+  .home__avatar {
+    width: 200px;
+    height: 200px;
+  }
+  /* Work */
+  .category__btn {
+    width: 100%;
+    margin: 4px 0;
+  }
+
+
+  /* About */
+  .about__right {
+    padding-top: 0;
+  }
+  .about-me__avatar {
+    display: none;
+  }
+    /* Arrow up */
+    .arrow-up {
+      bottom: 16px;
+      right: 16px;
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+      line-height: 25px;
+    }
+}
